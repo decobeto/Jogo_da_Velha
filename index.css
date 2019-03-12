@@ -1,0 +1,42 @@
+html{
+  font-size: 75px;
+  font-family: 'Permanent Marker', cursive;
+}
+body{
+  background-color: #2980b9;
+}
+
+table{
+  color: #fff;
+  border-collapse: collapse;
+  width: 50%;
+  height: 40%;
+}
+
+th, td{
+  text-align: center;
+  cursor: pointer;
+}
+
+#bloco1, #bloco4{
+  border-right: #fff 14px solid;
+  border-bottom: #fff 14px solid;
+}
+
+#bloco2, #bloco5{
+  border-right: #fff 14px solid;
+  border-bottom: #fff 14px solid;
+  border-left: #fff 14px solid;
+}
+
+#bloco3, #bloco6{
+  border-bottom: #fff 14px solid;
+  border-left: #fff 14px solid;
+}
+
+#bloco7, #bloco8 {
+  border-right: #fff 14px solid;
+}
+
+
+
