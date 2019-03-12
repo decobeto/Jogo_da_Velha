@@ -49,22 +49,21 @@ function verificaVitoria(){
        ((tabela[0][0] != '') && (tabela[1][1] != '' ) && (tabela[2][2] != '' ) && (tabela[0][0] == tabela[1][1]) && (tabela[1][1] == tabela[2][2]))  ||
        ((tabela[0][2] != '') && (tabela[1][1] != '' ) && (tabela[2][0] != '' ) && (tabela[0][0] == tabela[1][1]) && (tabela[1][1] == tabela[2][0])) ){
         alert("Parabéns " + jogadorDaVez + " você venceu");
-      }/* else if ( (tabela[0][0] != null) && (tabela[0][1] != null ) && (tabela[0][2] != null ) &&
-                  (tabela[1][0] != null) && (tabela[1][1] != null ) && (tabela[1][2] != null ) &&
-                  (tabela[2][0] != null) && (tabela[2][1] != null ) && (tabela[2][2] != null ) ){
-                    alert("DEU VELHA!!!!!");
-                    novoJogo();
-                  }*/
+      }
 }
 
 
 function novoJogo(){
   tabela = new Array(
-    ['', '', ''],
-    ['', '', ''],
-    ['', '', ''],
+    [null, null, null],
+    [null, null, null],
+    [null, null, null],
   );
-  document.getElementsByClassName("bloco1").innerHTML = '';
+  
+  el = document.getElementsByClassName("set");
+  for(i = 0;i < el.length;i++) {
+      el[i].innerHTML = "";
+  }
 }
 
 
