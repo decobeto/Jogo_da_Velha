@@ -59,8 +59,8 @@ function novoJogo(){
     [null, null, null],
     [null, null, null],
   );
-  
-  el = document.getElementsByClassName("set");
+
+  el = document.getElementsByClassName("bloco");
   for(i = 0;i < el.length;i++) {
       el[i].innerHTML = "";
   }
